@@ -1,13 +1,82 @@
 @use '../abstracts/' as *;
 
-.searchForm__container {
+.search__container {
     @include grid;
+    color: $color-primary-light;
     background: $color-primary-blue;
-    height: 20rem;
+    min-height: 26rem;
+    height: 100%;
     margin: 0 auto;
 }
 
-.searchForm__form {
+.search__form {
     @include gridCol(1, 12);
-    margin: 0 auto;
+    margin: 3rem auto;
+}
+
+.search__input {
+    @include flex(center, center);
+
+    svg {
+        fill: $color-primary-light;
+        margin-left: 0.5rem;
+    }
+
+    input {
+        border: none;
+        border-bottom: 2px solid $color-primary-light;
+        outline: none;
+        background: transparent;
+        color: $color-primary-light;
+        padding: 0 2rem 0.3rem;
+
+        &::placeholder {
+            color: $color-primary-light;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    button {
+        background: transparent;
+        border: none;
+    }
+
+}
+
+.search__word {
+    @include flex(end, start);
+    @include gridCol(2, 10);
+    border-bottom: 1px solid $color-primary-light;
+
+    p {
+        padding-left: 0.5rem;
+        font-weight: 200;
+    }
+}
+
+.search__definition {
+    padding: 2rem 0;
+    font-weight: 400;
+    @include gridCol(2, 10);
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.search__btn {
+    @include flex(center,center);
+    cursor: pointer;
+    fill: $color-primary-blue;
+    color: $color-primary-blue;
+    background: $color-primary-light;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    width: 9rem;
+
+    svg {
+        margin-right: 0.5rem;
+    }
 }

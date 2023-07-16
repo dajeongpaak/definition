@@ -1,5 +1,9 @@
 @use '../abstracts' as *;
 
+body {
+    line-height: 1.4;
+}
+
 .wrapper {
     margin: 3rem 1rem;
     max-width: 90rem;
