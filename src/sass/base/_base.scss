@@ -1,14 +1,12 @@
 @use '../abstracts' as *;
 
+html {
+    min-height: 100%;
+}
+
 body {
+    min-height: 100%;
     line-height: 1.4;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 70%, rgba(0, 41, 255, 0.27) 100%);
 }
 
-.wrapper {
-    margin: 3rem 1rem;
-    max-width: 90rem;
-
-    @include mq(large) {
-        margin: 3rem 0 0 3rem;
-    }
-}
