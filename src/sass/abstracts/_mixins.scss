@@ -1,0 +1,21 @@
+@use './variables' as *;
+@use './breakpoints' as *;
+
+@mixin flex($align, $justify, $direction: false) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+
+    @if $direction {
+        flex-direction: $direction;
+    }
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@mixin gridCol($col-start, $span) {
+    grid-column: $col-start / span $span;
+}

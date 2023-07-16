@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+header {
+    position: relative;
+}
+
+.title {
+
+    @include mq(large) {
+        @include flex(end, start);
+    }
+
+
+    h1 {
+        color: $color-primary-blue;
+
+    }
+}

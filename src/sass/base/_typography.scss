@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+h1, h1 {
+    font-family: $font-bodoni;
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 700;
+
+    @include mq(large) {
+        font-size: 8rem;
+        line-height: 0.7;
+ 
+    }
+
+}
+
+p {
+    font-family: $font-roboto;
+}

@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.wrapper {
+    margin: 3rem 1rem;
+    max-width: 90rem;
+
+    @include mq(large) {
+        margin: 3rem 0 0 3rem;
+    }
+}

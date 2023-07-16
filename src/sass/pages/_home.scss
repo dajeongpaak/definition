@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.searchForm__container {
+    @include grid;
+    background: $color-primary-blue;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.searchForm__form {
+    @include gridCol(1, 12);
+    margin: 0 auto;
+}
