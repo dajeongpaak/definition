@@ -27,4 +27,4 @@ jobs:
           server: ftp.dajeongpark.com
           username: definition@dajeongpark.com
           password: ${{ secrets.ftp_password }}
-          local-dir: public
+          local-dir: public/
