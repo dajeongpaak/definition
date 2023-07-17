@@ -38,6 +38,7 @@
         @include mq(large) {
             flex-direction: unset;
             flex-wrap: wrap;
+            margin-bottom: 2rem;
         }
 
         li { 
