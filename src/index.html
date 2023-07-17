@@ -16,7 +16,7 @@
         <main>
             <div class="search__container">
                 <div class="search__form">
-                    <form>
+                    <form id="searchForm">
                         <div class="search__input">
                             <input 
                                 id="searchInput"
@@ -34,28 +34,34 @@
                         </div>
                     </form>
                 </div>
-                <div class="introduction">
-                    <h2>Look up definitions and <span>save words<br /> for quick reference.</span></h2>
+                <div 
+                    id="js-introduction"
+                    class="introduction"
+                >
+                    <h2>Look up definitions and <br /> save words<br /> for quick reference.</h2>
                 </div>
-                <div class="result">
-                    <div class="result__word">
-                        <h3>Apple</h3>
-                        <p>/ˈæp.əl/</p>
+                <div 
+                    id="js-result"
+                    class="result"
+                >
+                    <div 
+                    id="resultWord"
+                    class="result__word">
                     </div>
-                    <div class="result__definition">
-                        <p>
-                            Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, rose apple, thorn apple etc.
-                        </p> 
-                        
-                        <div class="result__btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23">
-                                <g clip-path="url(#clip0_14_64)">
-                                    <path d="M16.2232 10.6786H12.3214V6.77677C12.3214 6.66382 12.229 6.57141 12.1161 6.57141H10.8839C10.771 6.57141 10.6786 6.66382 10.6786 6.77677V10.6786H6.77678C6.66384 10.6786 6.57143 10.771 6.57143 10.8839V12.1161C6.57143 12.229 6.66384 12.3214 6.77678 12.3214H10.6786V16.2232C10.6786 16.3361 10.771 16.4286 10.8839 16.4286H12.1161C12.229 16.4286 12.3214 16.3361 12.3214 16.2232V12.3214H16.2232C16.3362 12.3214 16.4286 12.229 16.4286 12.1161V10.8839C16.4286 10.771 16.3362 10.6786 16.2232 10.6786Z"/>
-                                    <path d="M11.5 0C5.14933 0 0 5.14933 0 11.5C0 17.8507 5.14933 23 11.5 23C17.8507 23 23 17.8507 23 11.5C23 5.14933 17.8507 0 11.5 0ZM11.5 21.0491C6.22746 21.0491 1.95089 16.7725 1.95089 11.5C1.95089 6.22746 6.22746 1.95089 11.5 1.95089C16.7725 1.95089 21.0491 6.22746 21.0491 11.5C21.0491 16.7725 16.7725 21.0491 11.5 21.0491Z"/>
-                                </g>
-                            </svg>
-                            <span>Add To List</span>
-                        </div>
+                    <div 
+                    id="resultDef"
+                    class="result__definition">
+                    </div>
+                    <div 
+                    id="resultBtn"
+                    class="result__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 23 23">
+                            <g clip-path="url(#clip0_14_64)">
+                                <path d="M16.2232 10.6786H12.3214V6.77677C12.3214 6.66382 12.229 6.57141 12.1161 6.57141H10.8839C10.771 6.57141 10.6786 6.66382 10.6786 6.77677V10.6786H6.77678C6.66384 10.6786 6.57143 10.771 6.57143 10.8839V12.1161C6.57143 12.229 6.66384 12.3214 6.77678 12.3214H10.6786V16.2232C10.6786 16.3361 10.771 16.4286 10.8839 16.4286H12.1161C12.229 16.4286 12.3214 16.3361 12.3214 16.2232V12.3214H16.2232C16.3362 12.3214 16.4286 12.229 16.4286 12.1161V10.8839C16.4286 10.771 16.3362 10.6786 16.2232 10.6786Z"/>
+                                <path d="M11.5 0C5.14933 0 0 5.14933 0 11.5C0 17.8507 5.14933 23 11.5 23C17.8507 23 23 17.8507 23 11.5C23 5.14933 17.8507 0 11.5 0ZM11.5 21.0491C6.22746 21.0491 1.95089 16.7725 1.95089 11.5C1.95089 6.22746 6.22746 1.95089 11.5 1.95089C16.7725 1.95089 21.0491 6.22746 21.0491 11.5C21.0491 16.7725 16.7725 21.0491 11.5 21.0491Z"/>
+                            </g>
+                        </svg>
+                        <span>Add To List</span>
                     </div>
                 </div>
             </div>
@@ -82,24 +88,14 @@
                         </p> 
                         <button></button>
                     </li>
-                    <li>
-                        <h4>Apple</h4>
-                        <p>
-                            Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, rose apple, thorn apple etc.
-                        </p> 
-                        <button></button>
-                    </li>
-                    <li>
-                        <h4>Apple</h4>
-                        <p>
-                            Any of various tree-borne fruits or vegetables especially considered as resembling an apple; also (with qualifying words) used to form the names of other specific fruits such as custard apple, rose apple, thorn apple etc.
-                        </p> 
-                        <button></button>
-                    </li>
                 </ul>
             
             </div>
         </main>
     </div>
+    <script src="js/modules/dictionaryAPI.js" type="module"></script>
+    <script src="js/modules/noteBook.js" type="module"></script>
+    <script src="js/modules/searchForm.js" type="module"></script>
+    <script src="/js/index.js" type="module"></script>
 </body>
 </html>

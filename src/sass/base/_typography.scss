@@ -27,6 +27,7 @@ h2, h2 {
     font-size: 3rem;
     font-weight: 400;
     line-height: 0.9;
+    text-align: right;
 
     @include mq(xsmall) {
         font-size: 3.5rem;
@@ -44,6 +45,7 @@ h3, .h3 {
     color: $color-primary-light;
     font-size: 2rem;
     font-weight: 600;
+    text-transform: capitalize;
 
     @include mq(medium) {
         font-size: 2.5rem;

@@ -13,6 +13,7 @@
     @include gridCol(2, 10);
     margin: 3.6rem auto;
     border-bottom: 2px solid $color-primary-light;
+    height: 3rem;
 
     @include mq(xsmall) {
         margin: 5.5rem auto;
@@ -70,7 +71,7 @@
 .introduction {
     @include gridCol(1, 12);
     @include grid;
-    display: none;
+    // display: none;
 
     @include mq(large) {
         @include gridCol(7, 7);
