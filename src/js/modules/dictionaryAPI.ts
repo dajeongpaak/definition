@@ -2,7 +2,12 @@ import { SearchedWordTypes } from '../types/types';
 
 const resultWord = document.querySelector("#resultWord") as HTMLDivElement;
 const resultDef = document.querySelector("#resultDef") as HTMLDivElement;
-const resultBtn = document.querySelector("#resultBtn") as HTMLDivElement;
+export const resultBtn = document.querySelector("#resultBtn") as HTMLDivElement;
+
+      // define global variables
+let word: string = '';
+let phonetic: string = '';
+let definition: string = '';
 
     // fetch definition of inputed word
 export async function getSearchedWord(value: string): Promise<void> {
@@ -15,11 +20,6 @@ export async function getSearchedWord(value: string): Promise<void> {
 }
 
 export function displaySearchedWord(data: any): SearchedWordTypes {
-
-        // define local variables
-    let word;
-    let phonetic;
-    let definition;
 
         // if data exists return as it is
     if(data[0]) {
@@ -36,6 +36,7 @@ export function displaySearchedWord(data: any): SearchedWordTypes {
         // if it doesn't return not found message
     } else {
         word = data.title;
+        phonetic = "";
         definition= data.message;
         resultBtn.style.display = "none";
     }
@@ -62,5 +63,6 @@ export function displaySearchedWord(data: any): SearchedWordTypes {
         phonetic,
         definition
     };
-
 }
+
+export { word, phonetic, definition };

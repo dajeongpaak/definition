@@ -1,5 +1,5 @@
 export type SearchedWordTypes = {
     word: string;
-    phonetic: string | undefined;
+    phonetic: string | null;
     definition: string;
 }

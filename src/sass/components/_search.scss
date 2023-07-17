@@ -31,7 +31,6 @@
     svg {
         fill: $color-primary-light;
         display: block;
-
     }
 
     input {
@@ -63,6 +62,7 @@
 
     button {
         background: transparent;
+        cursor: pointer;
         border: none;
         padding: 1rem;
     }
@@ -71,7 +71,6 @@
 .introduction {
     @include gridCol(1, 12);
     @include grid;
-    // display: none;
 
     @include mq(large) {
         @include gridCol(7, 7);
