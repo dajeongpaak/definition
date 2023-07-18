@@ -30,6 +30,7 @@ Vocabrary wordbook that users can search definition of words and save them for q
 
 - Search phonetic and definition of words
 - Save words for reference later and delete
+- Filter stored word list
 - User-friendly interface
 - Responsive design
 
