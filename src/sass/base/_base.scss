@@ -2,6 +2,7 @@
 
 html {
     min-height: 100%;
+    position: relative;
 }
 
 body {
@@ -11,3 +12,16 @@ body {
     transition: all ease 300ms;
 }
 
+footer {
+    .footer__logo {
+        position: absolute;
+        color: $color-secondary-grey;
+        font-size: 0.75rem;
+        bottom: 0;
+        right: 0.5rem;
+
+        img {
+            width: 0.75rem;
+        }
+    }
+}

@@ -57,7 +57,7 @@
                 @include gridCol(1, 12);
 
                 @include mq(medium) {
-                    @include gridCol(5, 7);
+                    @include gridCol(6, 7);
                     align-self: center;
                 }
             }
@@ -87,7 +87,7 @@
         gap: 0.5rem;
 
         @include mq(medium) {
-            @include gridCol(1, 4);
+            @include gridCol(1, 5);
             margin-bottom: unset;
             justify-self: center;
             align-self: center;
