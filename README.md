@@ -24,6 +24,7 @@ Vocabrary wordbook that users can search definition of words and save them for q
 > Misc
 
 - localStorage API : Web Storage API for **save words, phonetic, definition**
+- NPM : open-source packages for development tools
 
 ## Key Features
 
