@@ -1,6 +1,6 @@
 # Definition
 
-Vocabrary wordbook that users can search definition of words and save them for quick reference.
+Vocabulary wordbook that users can search definition of words and save them for quick reference.
 
 [Live Site](https://definition.dajeongpark.com/) 🚀
 
